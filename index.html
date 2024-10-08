@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <script src="https://codepen.io/steveg3003/pen/zBVakw"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <title>Tower Blocks</title>
+    <link rel="icon" href="data:image/jpeg;base64,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" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js" async></script>
+    <div id="container">
+      <div id="game"></div>
+      <div id="score">0</div>
+      <div id="instructions">
+        Clique (ou pressione a barra de espaço) para colocar o bloco
+      </div>
+      <div class="game-over">
+        <h2>Fim de jogo</h2>
+        <p>Você foi ótimo, você é o melhor.</p>
+        <p>Clique ou barra de espaço para começar de novo.</p>
+      </div>
+      <div class="game-ready">
+        <div id="start-button">Começar!</div>
+        <div></div>
+      </div>
+    </div>
+    <footer>test 👍</footer>
+  </body>
+</html>
